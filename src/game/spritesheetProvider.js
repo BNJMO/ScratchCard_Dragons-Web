@@ -2,20 +2,20 @@ import { Assets, Rectangle, Texture } from "pixi.js";
 
 const SPRITESHEET_COLUMNS = 3;
 const SPRITESHEET_ROWS = 4;
-const SPRITESHEET_CELL_WIDTH = 113;
-const SPRITESHEET_CELL_HEIGHT = 126;
-const SPRITESHEET_HORIZONTAL_GAP = 3;
-const SPRITESHEET_VERTICAL_GAP = 1;
-const SPRITESHEET_PADDING_LEFT = 0;
-const SPRITESHEET_PADDING_TOP = 9;
-const SPRITESHEET_PADDING_RIGHT = 0;
+const SPRITESHEET_CELL_WIDTH = 144;
+const SPRITESHEET_CELL_HEIGHT = 148;
+const SPRITESHEET_HORIZONTAL_GAP = 5;
+const SPRITESHEET_VERTICAL_GAP = 21;
+const SPRITESHEET_PADDING_LEFT = 11;
+const SPRITESHEET_PADDING_TOP = 29;
+const SPRITESHEET_PADDING_RIGHT = 8;
 const SPRITESHEET_PADDING_BOTTOM = 0;
 // Scales the hardcoded cell metrics so higher-resolution spritesheets can be used.
-const SPRITESHEET_RESOLUTION_FACTOR = 1.0;
+const SPRITESHEET_RESOLUTION_FACTOR = 0.75;
 const CARD_TYPE_COUNT = SPRITESHEET_COLUMNS * SPRITESHEET_ROWS;
 
 const SPRITESHEET_MODULES = import.meta.glob(
-  "../../assets/sprites/spritesheets/*.png",
+  "../../assets/sprites/cardTypes/animated/*.png",
   { eager: true }
 );
 
